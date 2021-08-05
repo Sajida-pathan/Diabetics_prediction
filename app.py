@@ -10,11 +10,11 @@ model = pickle.load(open('./model/model.pkl', 'rb'))
 def index():
    return render_template("index.html")
 
-@app.route('/ff',methods = ['POST', 'GET'])
-def ff():
+@app.route('/form',methods = ['POST', 'GET'])
+def form():
    return render_template("form.html")
 
-@app.route('/form',methods = ['POST', 'GET'])
+@app.route('/predict',methods = ['POST', 'GET'])
 def predict():
    values=[]
    
